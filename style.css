@@ -154,10 +154,10 @@ h1 {
 	.overlay a {
 		margin: .5rem auto;
 	}
-	#know,
-	#github {
-		visibility: hidden;
-	}
+	/* #know, */
+	/* #github { */
+	/* visibility: hidden; */
+	/* } */
 }
 
 @media (max-width: 880px) {
@@ -296,5 +296,10 @@ footer {
 @media (max-width: 880px) {
 	.tooltip:hover .tooltiptext {
 		visibility: hidden;
+	}
+}
+@media (hover: hover) and (pointer: fine) {
+	#know:hover {
+		color: yellow;
 	}
 }

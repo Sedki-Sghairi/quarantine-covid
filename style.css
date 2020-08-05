@@ -40,7 +40,7 @@
 	width: 200px;
 	text-decoration: none;
 	font-size: 20px;
-	color: white;
+	color: #fff;
 	border: #fff solid 1px;
 	border-radius: 0 5px 5px 0;
 	text-align: center;
@@ -54,18 +54,18 @@
 	top: 200px;
 	background-color: rgba(24, 149, 245, 0.1);
 }
-#know:hover {
-	background-color: rgba(24, 149, 245, 0.5);
-}
-
 #github {
 	top: 300px;
 	background-color: rgba(194, 82, 17, 0.1);
 }
-#github:hover {
-	background-color: rgba(194, 82, 17, 0.5);
+@media (hover: hover) and (pointer: fine) {
+	#know:hover {
+		background-color: rgba(24, 149, 245, 0.5);
+	}
+	#github:hover {
+		background-color: rgba(194, 82, 17, 0.5);
+	}
 }
-
 #toggle {
 	font-size: 2rem;
 	cursor: pointer;
@@ -75,6 +75,9 @@
 }
 h1 {
 	padding: 1rem;
+}
+#mobile {
+	visibility: hidden;
 }
 .media {
 	position: absolute;
@@ -155,7 +158,7 @@ h1 {
 		margin: .5rem auto;
 	}
 	/* #know, */
-	/* #github { */
+	/* #github { */ /*in case media query 4 gets removed*/
 	/* visibility: hidden; */
 	/* } */
 }
@@ -260,6 +263,14 @@ footer {
 		width: 100%;
 		margin-top: 1rem;
 	}
+	#mobile {
+		background-color: rgba(24, 149, 245, .1);
+		width: 150px;
+		font-size: 10px;
+		color: #fff;
+		visibility: visible;
+		text-align: center;
+	}
 }
 .tooltip {
 	position: relative;
@@ -296,10 +307,5 @@ footer {
 @media (max-width: 880px) {
 	.tooltip:hover .tooltiptext {
 		visibility: hidden;
-	}
-}
-@media (hover: hover) and (pointer: fine) {
-	#know:hover {
-		color: yellow;
 	}
 }

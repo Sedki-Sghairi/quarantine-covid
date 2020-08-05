@@ -154,6 +154,10 @@ h1 {
 	.overlay a {
 		margin: .5rem auto;
 	}
+	#know,
+	#github {
+		visibility: hidden;
+	}
 }
 
 @media (max-width: 880px) {

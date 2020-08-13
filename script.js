@@ -4,13 +4,13 @@ const reviews = [
 		name: 'Foued Kamel',
 		job: '<a href = "https://avionav.net/" target ="_blank">Avionav</a> CEO',
 		img: 'images/foued.jfif',
-		text: 'Sedki is smart and driven, and I highly recommand working with him'
+		text: 'Sedki is smart and driven, and I highly recommend working with him'
 	},
 	{
 		id: 2,
 		name: 'Wajdi Zorgui',
 		job: 'PLC Developer',
-		img: 'images/wajdi.jpg',
+		img: 'images/wajdi.png',
 		text:
 			'Working with Sedki is both fun and inspiring, he loves programming and he understands computers at a fundamental level, and that makes him in my opinion one of the best web developers out there.'
 	},
@@ -18,15 +18,15 @@ const reviews = [
 		id: 3,
 		name: 'Darina Bohashova',
 		job: 'Business Owner',
-		img: 'images/darina.jpg',
+		img: 'images/darina.png',
 		text: 'If I need a wep page for one of my properties, I just call Sedki. He always exceeds my expectation!'
 	},
 	{
 		id: 4,
 		name: 'Sofien Ghali',
 		job: 'UX designer',
-		img: 'images/soufien.jpg',
-		text: 'Great designs, great talent, clean code! I highly recommand.'
+		img: 'images/soufien.png',
+		text: 'Great designs, great talent, clean code! I highly recommend.'
 	}
 ];
 const img = document.getElementById('img-person');
@@ -48,7 +48,7 @@ function showCustomer() {
 	img.src = item.img;
 	author.textContent = item.name;
 	job.innerHTML = item.job;
-	info.textContent = item.text;
+	info.innerHTML = item.text;
 }
 prevbtn.addEventListener('click', function() {
 	currentItem--;

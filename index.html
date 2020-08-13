@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap"
+     rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;600&family=Pompiere&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
@@ -12,7 +16,7 @@
 <div id="navbar" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-      <a href="reviews/index.html"onclick="closeNav()">Reviews</a>
+      <a href="#reviews"onclick="closeNav()">Reviews</a>
       <a href="#" onclick="#">contact</a>
       <a href="#projects" onclick="closeNav()">Projects</a>
       <a id="profile-link" href="https://github.com/Sedki-Sghairi" target="_blank" onclick="closeNav()">myGithub</a>
@@ -54,11 +58,45 @@
             <h5>Javascript tecknical document</h5>
         </div> 
   </section>
-  <footer id="info">
+  <section id="info">
     <p id="hello"></p>
-    <p>Above are some of my projects, I am a full stack web developer, and I am very passionate about programming.
-    <em>Sedki Sghairi.</em> </p>
-  </footer>
+    <p>.this is under maintenance , Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eius alias quae voluptates culpa vero atque aperiam a praesentium voluptas.
+     </p>
+  </section>
+  <main>
+    <section class="container4">
+        <div class="title">
+            <h4>Reviews</h4>
+            <div class="underline"></div>
+        </div>
+        <article class="reviews" id="reviews">
+
+            <div class="img-container">
+                
+                <img src="images/foued.jfif" alt="picture of foued kamel" id="img-person">
+            </div>
+            <h4 id="author">Foued Kamel</h4>
+            <p class="" id="job"><a href = "https://avionav.net/" target ="_blank">Avionav</a> CEO</p>
+            <p id="informs">Sedki is smart and driven, and I highly recommand working with him</p>
+            <div class="button-container">
+                <button class="prev-btn" id="prevbtn">
+                    <i class="fas fa-angle-double-left"></i>
+                </button>
+                <button class="prev-btn" id="nextbtn">
+                    <i class="fas fa-angle-double-right"></i>
+                </button>
+            </div>
+            <a href="index.html">
+              <button class="home">
+                <i class="fas fa-home"></i>
+              </button>
+            </a>
+            
+        </article>
+       
+    </section>
+</main>
+  <script src="script.js"></script>
   <script>
   function openNav() {
     document.getElementById("navbar").style.height = "100%";

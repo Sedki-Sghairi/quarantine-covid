@@ -1,2 +1,2 @@
 # Portfolio
-Simple responsive Portfolio with CSS and vanilla Javascript.
+Simple responsive Portfolio with CSS and Javascript.

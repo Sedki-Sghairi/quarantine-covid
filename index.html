@@ -1,113 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap"
-     rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;600&family=Pompiere&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
-</head>
-<body>
-    
-<div id="navbar" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="#reviews"onclick="closeNav()">Reviews</a>
-      <a href="#" onclick="#">contact</a>
-      <a href="#projects" onclick="closeNav()">Projects</a>
-      <a id="profile-link" href="https://github.com/Sedki-Sghairi" target="_blank" onclick="closeNav()">myGithub</a>
-    </div>
-  </div>
-  <div id="welcome-section">
-    <span id = "toggle"onclick="openNav()">&#9776</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid quarantine</title>
 
-      <h2>Hello & Welcome!</h2>
-      <p><span>I am Sedki</span></p>
-     <p id="mobile">scroll down to see my work</p>
-    <ul class="media">
-      <li><a href="#" onclick="alert('Sorry!\nmy facebook is temporarily deactivated.')"><img src="images/facebook.png"></a></li>
-      <li><a href="https://twitter.com/SedkiToohless" target="_blank"><img src="images/twitter.png"></a></li>
-      <li><a href="https://www.linkedin.com/in/sedki-sghairi-9a4059190/" target="_blank"><img src="images/linkedin.png"></a></li>
-  </ul>
-    
-  </div>
-  <section id="projects">
-      
-        <div class="project-tile">
-           <a href="https://sedki-sghairi.github.io/Tribute-page/" target="_blank"><img src="images/tribute.png" 
-            alt="picture of website"></a>
-            <h5>Stanislav tribute Page</h5>
-        </div>
-        <div class="project-tile">
-          <a href="https://sedki-sghairi.github.io/surveyForm/" target="_blank"><img src="images/covid.png"
-             alt="picture of a web page"></a>
-             <h5>A Survey Form</h5>
-        </div> 
-        <div class="project-tile">
-          <a href="https://sedki-sghairi.github.io/Tesla-landing-page/" target="_blank"><img src="images/tesla.png"
-             alt="picture of a landing page"></a>
-             <h5>Tesla landing page</h5>
-        </div>
-        <div class="project-tile">
-          <a href="https://sedki-sghairi.github.io/Javascript-documentation/" target="_blank"><img src=
-            "images/documentation.png"alt="link to javascript documentation page"></a>
-            <h5>Javascript tecknical document</h5>
-        </div> 
-  </section>
-  <section id="info">
-    <p id="hello"></p>
-    <p>.this is under maintenance , Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eius alias quae voluptates culpa vero atque aperiam a praesentium voluptas.
-     </p>
-  </section>
-  <div id="main">
-    <section class="container4">
-        <div class="title">
-            <h4>Reviews</h4>
-            <div class="underline"></div>
-        </div>
-        <article class="reviews" id="reviews">
-
-            <div class="img-container">
-                
-                <img src="images/foued.jfif" alt="picture of foued kamel" id="img-person">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section-center">
+      <article class="gift-img">
+        <img src="./gift.png" alt="gift" />
+      </article>
+      <article class="gift-info">
+        <h3>!!الوقت الي مزال باش نبوس عيدوده</h3>
+        <h4 class="giveaway">
+           
+        </h4>
+        <p>
+          According to CDC -"If you had doubts and any symptoms, you can be around others:<p>
+          <p> 10 days since symptoms first appeared and</p>
+          <p> 24 hours with no fever without the use of fever-reducing medications and
+          Other symptoms of COVID-19 are improving*"</p>
+        </p> 
+        <div class="deadline">
+          <!-- days -->
+          <div class="deadline-format">
+            <div>
+              <h4 class="days">34</h4>
+              <span>days</span>
             </div>
-            <h4 id="author">Foued Kamel</h4>
-            <p class="" id="job"><a href = "https://avionav.net/" target ="_blank">Avionav</a> CEO</p>
-            <p id="informs">Sedki is smart and driven, and I highly recommend working with him</p>
-            <div class="button-container">
-                <button class="prev-btn" id="prevbtn">
-                    <i class="fas fa-angle-double-left"></i>
-                </button>
-                <button class="prev-btn" id="nextbtn">
-                    <i class="fas fa-angle-double-right"></i>
-                </button>
+          </div>
+          <div class="deadline-format">
+            <div>
+              <h4 class="hours">34</h4>
+              <span>hours</span>
             </div>
-            <a href="index.html">
-              <button class="home">
-                <i class="fas fa-home"></i>
-              </button>
-            </a>
-            
-        </article>
-       
+          </div>
+          <div class="deadline-format">
+            <div>
+              <h4 class="minutes">34</h4>
+              <span>mins</span>
+            </div>
+          </div>
+          <div class="deadline-format">
+            <div>
+              <h4 class="seconds">34</h4>
+              <span>secs</span>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
-</div>
-  <script src="script.js"></script>
-  <script>
-  function openNav() {
-    document.getElementById("navbar").style.height = "100%";
-  }
-  function closeNav() {
-    document.getElementById("navbar").style.height = "0%";
-  }
-  </script>
+    <script src="app.js"></script>
   </body>
-  </html>
-  
-    
-</body>
 </html>
